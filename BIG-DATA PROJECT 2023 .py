@@ -23,10 +23,10 @@ plt.style.use('ggplot')
 
 
 #set API keys
-API_KEY ="0ehInzmh7rVILZZUyzGEyj3p3"
-API_KEY_SECRET ="ywdUlYSxiHgYAlUb4KqEg97LdPjRQrRk0QMWNdTls1WcIWo6Iy"
-OAUTH_TOKEN ="18873874-kwkRjbIz3DdKRuLYqdepf1o1eJjpamXQEO0NTySVb"
-OAUTH_TOKEN_SECRET ="s0z47tZNaKGMQSJLroBLgZpi8xuw7k1nCRrUC7dm7H0M1"
+API_KEY = <AuthToken>
+API_KEY_SECRET =  <APIkey>
+OAUTH_TOKEN = <AUTHToken>
+OAUTH_TOKEN_SECRET = <SECRETAUTHToken>
 
 #authentication
 auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
