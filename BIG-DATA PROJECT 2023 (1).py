@@ -4,7 +4,7 @@
 # In[4]:
 
 
-#Big Data Project 2023 by Georgia Aggelousopoulou
+#Big Data Project 2023
 get_ipython().system('pip install tweepy==3.10.0')
 
 
