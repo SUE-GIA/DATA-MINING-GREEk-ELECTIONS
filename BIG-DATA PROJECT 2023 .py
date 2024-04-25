@@ -131,26 +131,26 @@ results
 
 #Tried getting polarity and sensivity from spaCy and other libs for greek tweets ...
 
-#import spacy
-#nlp = spacy.load('el_core_news_sm')
-#from spacytextblob.spacytextblob import SpacyTextBlob
-#nlp.add_pipe("spacytextblob")
+import spacy
+nlp = spacy.load('el_core_news_sm')
+from spacytextblob.spacytextblob import SpacyTextBlob
+nlp.add_pipe("spacytextblob")
 
       
 
-#def polarity_tweets(tweet):
- #   doc = nlp(tweet)
-  #  polarity = doc._.polarity
-   # return polarity
-#def subjectivity_tweets(tweet):
-  #  doc = nlp(tweet)
-   # subjectivity = doc._.subjectivity
-   # return subjectivity
+def polarity_tweets(tweet):
+    doc = nlp(tweet)
+    polarity = doc._.polarity
+    return polarity
+def subjectivity_tweets(tweet):
+    doc = nlp(tweet)
+    subjectivity = doc._.subjectivity
+    return subjectivity
     
     
-#df['Polarity']= df['Clean Tweets'].apply(polarity_tweets)
-#df['Subjectivity']= df['Clean Tweets'].apply(subjectivity_tweets)
-#df.head(499)
+df['Polarity']= df['Clean Tweets'].apply(polarity_tweets)
+df['Subjectivity']= df['Clean Tweets'].apply(subjectivity_tweets)
+df.head(499)
 
 
 # In[39]:
